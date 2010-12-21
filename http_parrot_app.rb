@@ -3,7 +3,7 @@ require 'sinatra'
 require 'ohm'
 
 configure :production do
-  Ohm.connect ENV["REDISTOGO_URL"]
+  Ohm.connect(:url => ENV["REDISTOGO_URL"])
 end
 
 class Request < Ohm::Model
