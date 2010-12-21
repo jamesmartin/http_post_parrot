@@ -3,6 +3,7 @@ require 'sinatra'
 require 'ohm'
 
 configure :production do
+  require 'newrelic_rpm'
   Ohm.connect(:url => ENV["REDISTOGO_URL"])
 end
 
