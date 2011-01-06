@@ -2,12 +2,11 @@ About HTTP POST Parrot
 =================================
 
 HTTP Post Parrot is a little [Sinatra](http://sinatrarb.com) web application
-that remembers data
-[POST](http://en.wikipedia.org/wiki/POST_(HTTP))ed to a 'listen' route:
+that remembers data POSTed to a 'listen' route:
 
     $ curl http://vivid-earth-821.heroku.com/listen/foo -d "bar" 
 
-Remembered data can be retrieved by [GET](http://en.wikipedia.org/wiki/POST_(HTTP))tting the associated 'repeat' route:
+Remembered data can be retrieved by GETtting the associated 'repeat' route:
 
     $ curl http://vivid-earth-821.heroku.com/repeat/foo 
     $ bar
@@ -25,3 +24,5 @@ Parrot uses Redis to persist the data you post. To
 install redis on a homebrew enabled OSX, try:
 
   $ brew install redis
+
+Enjoy!
