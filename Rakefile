@@ -13,7 +13,7 @@ end
 namespace :http_parrot do
   desc 'Start HTTPParrot for development'
   task :start do
-    system 'shotgun --host 192.168.126.51 http_parrot_app.rb'
+    system 'shotgun --host 127.0.0.1 http_parrot_app.rb'
   end
 end
 
